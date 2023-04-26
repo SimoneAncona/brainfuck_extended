@@ -8,8 +8,9 @@ namespace BFE
     class Parser
     {
     private:
+        std::vector<Token> tokens;
     public:
-        Parser();
+        Parser(std::vector<Token>&);
         ~Parser();
 
         std::vector<Symbol> parse();

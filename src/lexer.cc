@@ -10,7 +10,6 @@ BFE::Lexer::Lexer(std::string content)
 
 BFE::Lexer::~Lexer()
 {
-
 }
 
 std::vector<BFE::Token> BFE::Lexer::get_tokens()
