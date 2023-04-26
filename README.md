@@ -21,6 +21,7 @@ Brainfuck Extended is an extended version of the original Brainfuck
 - `#` Define list size
 - `*` Jump to the cell number stored in the current cell
 - `!` Define or use a macro (a function that uses the caller context)
+- `$` Write the current address in the current cell
 
 ## Syntax
 - Write a literal number to put a number in the current cell
