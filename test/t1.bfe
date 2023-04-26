@@ -1,0 +1,4 @@
+@print_chr(&chr):.
+@main:
+    @print_chr("a")
+    "ciao"

@@ -12,6 +12,10 @@ int main(int argc, char **argv)
     parse_argv(argc, argv);
     BFE::Lexer lexer(BFE::read_string_from_file(std::string(argv[1])));
     std::vector<BFE::Token> tokens = lexer.get_tokens();
+    for (BFE::Token tk : tokens)
+    {
+        std::cout << tk.value << std::endl;
+    }
     BFE::Parser parser(tokens);
     return 0;
 }

@@ -5,19 +5,23 @@ namespace BFE
 {
     enum TokenType
     {
-        OPERATOR,
         STRING,
         IDENTIFIER,
         MODULE,
         SPECIAL,
+        NUMBER,
         WHITE_SPACE,
-        END_OF_FILE
+        NEW_LINE,
+        END_OF_FILE,
+        UNKNOWN
     };
 
     struct Token
     {
         TokenType type;
         std::string value;
+        int line;
+        int column;
     };
 
 }
