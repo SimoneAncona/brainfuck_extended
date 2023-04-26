@@ -20,7 +20,7 @@ Brainfuck Extended is an extended version of the original Brainfuck
 - `&` Type check
 - `#` Define list size
 - `*` Jump to the cell number stored in the current cell
-- `!` Define a macro (a function that uses the main context)
+- `!` Define or use a macro (a function that uses the caller context)
 
 ## Syntax
 - Write a literal number to put a number in the current cell
