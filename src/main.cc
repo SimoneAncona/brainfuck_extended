@@ -1,5 +1,5 @@
 #include "lexer.hh"
-#include "modules.hh"
+#include "module.hh"
 #include "parser.hh"
 
 int main(int argc, char **argv)

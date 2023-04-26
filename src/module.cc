@@ -1,4 +1,4 @@
-#include "modules.hh"
+#include "module.hh"
 
 std::string BFE::read_string_from_file(const std::string &filename)
 {
