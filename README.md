@@ -25,6 +25,16 @@ Brainfuck Extended is an extended version of the original Brainfuck
 ## Syntax
 - Write a literal number to put a number in the current cell
 - Write a literal string to fill the vector and auto increment the pointer
+- You can import a library using `{}`. For example
+```
+{std} // import standard library
+@main:
+ 10
+ >
+ 0
+ !jump
+ ;
+```
 
 ## Functions
 Each function has its own vector and the pointer, the combination of the two is called context, the main function is the entry point.  
