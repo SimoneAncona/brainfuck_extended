@@ -46,12 +46,22 @@ In BFE we have also type checking, the standard types are
 - `&str` for null ending strings
 - `&num#` pointer to num
 - `&chr#10` string 10 character long
+You can define your own type like this:
+```
+&str_of_10:&chr#10;
+```
 
 ## Macros
 A macro is like a function that use the context of the function that calls the macro. Example
 ```
 !write_10_and_20:10>20;
 @main:!write_10_and_20<<++; // the main context now is [12, 20]
+```
+
+## Context handling
+Is it possible to define the size of the vector for each function and the starting pointer. Example, we want the main vector with 10 cells and set the starting pointer to cell 2
+```
+@main#10|2:<< /*now i the pointer is 0*/ +++>++<-;
 ```
 
 # Examples
