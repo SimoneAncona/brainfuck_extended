@@ -1,0 +1,25 @@
+{
+  "name": "bfe-syntax",
+  "displayName": "Brainfuck extended syntax highlighting",
+  "description": "A brainfuck extended syntax highlighting extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "bfe",
+      "aliases": ["Brainfuck Extended", "bfe"],
+      "extensions": [".bfe"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "bfe",
+      "scopeName": "source.bfe",
+      "path": "./syntaxes/bfe.tmLanguage.json"
+    }]
+  }
+}
