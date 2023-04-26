@@ -1,6 +1,6 @@
-#include "lexer.hh"
-#include "module.hh"
-#include "parser.hh"
+#include ".\lib\lexer.hh"
+#include ".\lib\module.hh"
+#include ".\lib\parser.hh"
 #include <iostream>
 #include <string>
 #include <filesystem>
@@ -11,8 +11,8 @@ int main(int argc, char **argv)
 {
     parse_argv(argc, argv);
     BFE::Lexer lexer(BFE::read_string_from_file(std::string(argv[1])));
-    // std::vector<BFE::Token> tokens = lexer.get_tokens();
-    // BFE::Parser parser(tokens);
+    std::vector<BFE::Token> tokens = lexer.get_tokens();
+    BFE::Parser parser(tokens);
     return 0;
 }
 

@@ -1,1 +1,1 @@
-clang++ .\src\main.cc -o .\bin\bfe.exe -std=c++17 .\src\lexer.cc .\src\executer.cc .\src\parser.cc .\src\module.cc
+clang++ .\src\main.cc -o .\bin\bfe.exe -std=c++17 .\src\lib\lexer.cc .\src\lib\executer.cc .\src\lib\parser.cc .\src\lib\module.cc
