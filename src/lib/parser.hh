@@ -9,6 +9,8 @@ namespace BFE
     {
     private:
         std::vector<Token> tokens;
+
+        int current_index;
     public:
         Parser(std::vector<Token>&);
         ~Parser();

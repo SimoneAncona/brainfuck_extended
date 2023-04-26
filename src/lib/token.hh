@@ -5,11 +5,15 @@ namespace BFE
 {
     enum TokenType
     {
+        OPERATOR,
         STRING,
         IDENTIFIER,
         MODULE,
         SPECIAL,
         NUMBER,
+        TYPE,
+        MACRO,
+        FUNCTION,
         WHITE_SPACE,
         NEW_LINE,
         END_OF_FILE,
